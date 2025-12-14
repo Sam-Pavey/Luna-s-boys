@@ -1,0 +1,23 @@
+1 	Roman Catholic
+2 	Church of England / Anglican
+3 	Church of Ireland
+4 	Baptist
+5 	Methodist
+6 	Presbyterian / Church of Scotland
+7 	United Reformed Church / Congregational
+8 	Free Presbyterian
+9 	Brethren
+10 	Other Protestant
+11 	Greek or Russian Orthodox
+12 	Other Eastern Orthodox
+13 	Other Christian
+14 	Hindu
+15 	Sikh
+16 	Buddhist
+17 	Other Eastern Religions
+18 	Jewish
+19 	Islam / Muslim
+20 	Other non-Christian
+6666 	Not applicable
+7777 	Refusal
+9999 	No answer

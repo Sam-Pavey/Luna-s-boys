@@ -1,0 +1,42 @@
+name - Title of dataset
+    essround - ESS round
+    edition - Edition
+    proddate - Production date
+    idno - Respondent's identification number
+    cntry - Country
+    dweight - Design weight
+    pspwght - Post-stratification weight including design weight
+    pweight - Population size weight (must be combined with dweight or pspwght)
+    anweight - Analysis weight
+    nwspol - News about politics and current affairs, watching, reading or listening, in minutes
+    netusoft - Internet use, how often
+    netustm - Internet use, how much time on typical day, in minutes
+    ppltrst - Most people can be trusted or you can't be too careful
+    pplfair - Most people try to take advantage of you, or try to be fair
+    pplhlp - Most of the time people helpful or mostly looking out for themselves
+    trstlgl - Trust in the legal system
+    trstplt - Trust in politicians
+    prtvtdgb - Party voted for in last national election, United Kingdom
+    lrscale - Placement on left right scale
+    aesfdrk - Feeling of safety of walking alone in local area after dark
+    atchctr - How emotionally attached to [country]
+    atcherp - How emotionally attached to Europe
+    rlgdngb - Religion or denomination belonging to at present, United Kingdom
+    rlgdegb - Religion or denomination belonging to in the past, United Kingdom
+    dscrgrp - Member of a group discriminated against in this country
+    ctzcntr - Citizen of country
+    brncntr - Born in country
+    cntbrthd - Country of birth
+    hhmmb - Number of people living regularly as member of household
+    gndr - Gender
+    gndr2 - Gender of second person in household
+    yrbrn - Year of birth
+    agea - Age of respondent, calculated
+    agegroup - Age group, post coded
+    rshpsgb - Relationship with husband/wife/partner currently living with, United Kingdom
+    marstgb - Legal marital status, United Kingdom
+    region - region
+    ipstrgva - Important that government is strong and ensures safety
+    prob - Sampling probability
+    stratum - Sampling stratum
+    psu - Primary sampling unit
