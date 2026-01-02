@@ -9,6 +9,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
+df_ = pd.read_csv('master dataset.csv')
 df = pd.read_csv('master dataset.csv')
 
 #importing the keys given by the ess to make the dataset more readable
@@ -18,15 +19,19 @@ with open('keys.txt', 'r') as file:
     column_names = {key.strip(): value.strip() for key, value in (line.split('-', 1) for line in file)}
 with open('religion labels (with other).txt', 'r') as file:
     religion_codes = {key.strip(): value.strip() for key, value in (line.split(' ', 1) for line in file)}  
-    
+with open('ESS years.txt', 'r') as file:
+    year_codes = {key.strip(): value.strip() for key, value in (line.split(' ', 1) for line in file)}     
     
 #renaming columns with intelligible names instead of shortened codes
 df = df.rename(columns=column_names)
-    
+bad_years = ['ESS1e06_7', 'ESS2e03_6', 'ESS3e03_7', 'ESS4e04_6']
+df = df[(~df['Title of dataset'].isin(bad_years))] 
+df['Year'] = df['Title of dataset'].apply(lambda x: year_codes[x])
+
 #turning region codes into a text string for the region
 for index, row in df.iterrows():
-    df.loc[index, 'region'] = location_codes[row['region']] 
-    df.loc[index, 'Religion or denomination belonging to at present, United Kingdom'] = religion_codes[str(row['Religion or denomination belonging to at present, United Kingdom'])] 
+    df.loc[index, 'Region'] = location_codes[row['Region']] 
+    df.loc[index, 'Religion or denomination belonging to at present, United Kingdom'] = religion_codes[str(int(row['Religion or denomination belonging to at present, United Kingdom']))] 
     
     
 #changing codes for no response, refusal, not applicable, etc., into nan values
