@@ -4,9 +4,9 @@
 4 	Other
 5 	Other
 6 	Other
-7 	United Reformed Church / Congregational
-8 	Free Presbyterian
-9 	Brethren
+7 	Other
+8 	Other
+9 	Other
 10 	Other
 11 	Other
 12 	Other
@@ -14,10 +14,13 @@
 14 	Other
 15 	Other
 16 	Other
-17 	Other Eastern Religions
+17 	Other
 18 	Other
 19 	Islam / Muslim
 20 	Other
 6666 	Not applicable
 7777 	Not applicable
 9999 	Not applicable
+6666.0 	Not applicable
+7777.0 	Not applicable
+9999.0 	Not applicable

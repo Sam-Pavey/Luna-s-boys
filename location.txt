@@ -231,3 +231,5 @@ UKN0D 	Antrim and Newtownabbey
 UKN0E 	Lisburn and Castlereagh
 UKN0F 	Mid and East Antrim
 UKN0G 	Fermanagh and Omagh
+6666.0 	Not applicable
+99999   Not available

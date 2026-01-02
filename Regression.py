@@ -22,15 +22,24 @@ df['log_news'] = df['News about politics and current affairs, watching, reading 
 df[['religion']]= df[['Religion or denomination belonging to at present, United Kingdom']].astype('category')
 
 # model= ols('Placement on left right scale ~ log news mins + How emotionally attached to [country] + How emotionally attached to Europe + Feeling of safety of walking alone in local area after dark + C(Religion or denomination belonging to at present, United Kingdom)', data=df).fit() # fit the model
-model= ols("l_r ~ log_news + emotional_country + emotional_europe + C(religion, Treatment(reference='Not applicable'))", data=df).fit()
+# d2010 = df[df['Year']==2010]
+# m2010= ols("l_r ~ log_news + emotional_country + emotional_europe + C(religion, Treatment(reference='Not applicable'))", data=d2010).fit()
+# m2012= ols("l_r ~ log_news + emotional_country + emotional_europe + C(religion, Treatment(reference='Not applicable'))", data=df[df['Year']==2012]).fit()
+# m2014= ols("l_r ~ log_news + emotional_country + emotional_europe + C(religion, Treatment(reference='Not applicable'))", data=df[df['Year']==2014]).fit()
+m2016= ols("l_r ~ log_news + emotional_country + emotional_europe + C(religion, Treatment(reference='Not applicable'))", data=df[df['Year']==2016]).fit()
+m2018= ols("l_r ~ log_news + emotional_country + emotional_europe + C(religion, Treatment(reference='Not applicable'))", data=df[df['Year']==2018]).fit()
+m2023= ols("l_r ~ log_news + emotional_country + emotional_europe + C(religion, Treatment(reference='Not applicable'))", data=df[df['Year']==2023]).fit()
+
+
 
 
 table=summary_col( # create a regression table 
-    model, # pass the models to the summary_col function
+    [m2016, m2018, m2023], # pass the models to the summary_col function
     stars=True, # add stars denoting the p-values of the coefficient to the table; * p<0.05, ** p<0.01, *** p<0.001
     float_format='%0.3f', # set the decimal places to 3
-    model_names=['UK, 2023'], # set the name of the model
+    model_names=['2016', '2018', '2023'], # set the name of the model
     info_dict = {"N":lambda x: "{0:d}".format(int(x.nobs))}) # add the number of observations to the table
 
-print(table)
-print(table.as_text())
+# print(table.as_csv())
+# print(table)
+print(table.as_latex())

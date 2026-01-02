@@ -8,35 +8,53 @@ name - Title of dataset
     pspwght - Post-stratification weight including design weight
     pweight - Population size weight (must be combined with dweight or pspwght)
     anweight - Analysis weight
-    nwspol - News about politics and current affairs, watching, reading or listening, in minutes
+    prob - Sampling probability
+    stratum - Sampling stratum
+    psu - Primary sampling unit
+    netuse - Personal use of internet/e-mail/www
     netusoft - Internet use, how often
     netustm - Internet use, how much time on typical day, in minutes
-    ppltrst - Most people can be trusted or you can't be too careful
+    nwspol - News about politics and current affairs, watching, reading or listening, in minutes
+    nwsppol - Newspaper reading, politics/current affairs on average weekday
+    nwsptot - Newspaper reading, total time on average weekday
     pplfair - Most people try to take advantage of you, or try to be fair
     pplhlp - Most of the time people helpful or mostly looking out for themselves
+    ppltrst - Most people can be trusted or you can't be too careful
+    rdpol - Radio listening, news/politics/current affairs on average weekday
+    rdtot - Radio listening, total time on average weekday
+    tvpol - TV watching, news/politics/current affairs on average weekday
+    tvtot - TV watching, total time on average weekday
+    lrscale - Placement on left right scale
     trstlgl - Trust in the legal system
     trstplt - Trust in politicians
+    prtvtgb - Party voted for in last national election, United Kingdom
+    prtvtagb - Party voted for in last national election, United Kingdom
+    prtvtbgb - Party voted for in last national election, United Kingdom
+    prtvtcgb - Party voted for in last national election, United Kingdom
     prtvtdgb - Party voted for in last national election, United Kingdom
-    lrscale - Placement on left right scale
     aesfdrk - Feeling of safety of walking alone in local area after dark
     atchctr - How emotionally attached to [country]
     atcherp - How emotionally attached to Europe
-    rlgdngb - Religion or denomination belonging to at present, United Kingdom
-    rlgdegb - Religion or denomination belonging to in the past, United Kingdom
-    dscrgrp - Member of a group discriminated against in this country
-    ctzcntr - Citizen of country
+    blgetmg - Belong to minority ethnic group in country
+    brghmwr - How often worry about your home being burgled
     brncntr - Born in country
     cntbrthd - Country of birth
+    ctzcntr - Citizen of country
+    dscrgrp - Member of a group discriminated against in this country
+    rlgdngb - Religion or denomination belonging to at present, United Kingdom
+    rlgdegb - Religion or denomination belonging to in the past, United Kingdom
     hhmmb - Number of people living regularly as member of household
     gndr - Gender
     gndr2 - Gender of second person in household
     yrbrn - Year of birth
+    age - Age of respondent, calculated
     agea - Age of respondent, calculated
     agegroup - Age group, post coded
-    rshpsgb - Relationship with husband/wife/partner currently living with, United Kingdom
+    edlvgb - Highest level of education, United Kingdom
+    edlvagb - Highest level of education, United Kingdom
     marstgb - Legal marital status, United Kingdom
-    region - region
+    rshpsgb - Relationship with husband/wife/partner currently living with, United Kingdom
+    ipstrgv - Important that government is strong and ensures safety
     ipstrgva - Important that government is strong and ensures safety
-    prob - Sampling probability
-    stratum - Sampling stratum
-    psu - Primary sampling unit
+    region - Region
+    regiongb - Region, United Kingdom
