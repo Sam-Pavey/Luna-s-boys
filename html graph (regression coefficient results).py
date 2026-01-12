@@ -7,6 +7,13 @@ html map for the website
 @author: ssamp
 """
 
+
+
+### this file generates the final html graph of coefficient results by region. 
+# it is quite long but DOES work (this project was one of my first attempts at visualising geospatial data)
+
+
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -195,4 +202,5 @@ folium.LayerControl(collapsed=False).add_to(m)
 
 m.save("uk_multivariable_map.html")
 # html_str = m.get_root().render()
+
 # print(html_str)
