@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 df = pd.read_csv('Working file.csv')
+df = df[df['']]
 df['log news mins'] = df['News about politics and current affairs, watching, reading or listening, in minutes'].apply(lambda x: np.log(x+1))
 df['log safety'] = df['Feeling of safety of walking alone in local area after dark'].apply(lambda x: np.log(x))
 #to do different plots just change the x variable and the lable
