@@ -5,6 +5,13 @@ Created on Thu Dec 18 18:10:55 2025
 @author: ssamp
 """
 
+
+# This file is an initial attempt at graphing regional results, before utilising ONS maps as these aligned with the regions used in the ESS survey. 
+# Because of this, please ignore this file as it was not used in the final project. 
+
+
+
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -83,4 +90,5 @@ plt.show()
 #              fontsize=11,
 #              arrowprops={'arrowstyle': '->',
 #                          'color': 'red'},
+
 #              color='black')
